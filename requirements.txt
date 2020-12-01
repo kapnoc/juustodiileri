@@ -1,0 +1,4 @@
+kivy==1.11.1
+kivymd==0.104.1
+buildozer
+Cython
