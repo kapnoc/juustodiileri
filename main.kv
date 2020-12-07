@@ -1,0 +1,31 @@
+#:kivy 1.11.1
+
+##:include otherfile.kv
+
+#:import MDToolbar kivymd.uix.toolbar.MDToolbar
+#:import MDNavigationDrawer kivymd.uix.navigationdrawer.MDNavigationDrawer
+#:import NavigationLayout kivymd.uix.navigationdrawer.NavigationLayout
+
+<MainScreen>:
+    NavigationLayout:
+        ScreenManager:
+            Screen:
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    MDToolbar:
+                        title: "Navigation Drawer"
+                        elevation: 10
+                        left_action_items: [['menu', lambda x: nav_drawer.toggle_nav_drawer()]]
+
+                    Widget:
+                    # Screen:
+                    #     MDRectangleFlatButton:
+                    #         text: "Hello World"
+                    #         pos_hint: {"center_x": 0.5, "center_y": 0.5}
+
+
+        MDNavigationDrawer:
+            id: nav_drawer
+
+            NavigationDrawerContents:
