@@ -1,3 +1,5 @@
 .buildozer/
 bin/
 env/
+appstorage.py
+__pycache__/

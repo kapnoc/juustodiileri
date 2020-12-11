@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = My Application
+title = juustodiileri
 
 # (str) Package name
-package.name = myapp
+package.name = juustodiileri
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = cc.kapno
@@ -36,7 +36,7 @@ version = 0.0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==1.11.1, kivymd==0.104.1
+requirements = python3, kivy==1.11.1, kivymd==0.104.1, requests, pickle
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
