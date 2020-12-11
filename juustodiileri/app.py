@@ -8,10 +8,6 @@ from juustodiileri.widgets.login import LoginScreen
 from juustodiileri.widgets.logged_in import LoggedInScreen
 
 
-class NavigationDrawerContents(BoxLayout):
-    pass
-
-
 class MainApp(MDApp):
     def build(self):
         manager = ScreenManager()

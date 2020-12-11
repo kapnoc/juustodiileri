@@ -26,7 +26,7 @@
                             size_hint_x: 0.7
 
 
-                            MDRectangleFlatButton:
+                            MDRaisedButton:
                                 pos_hint: {"center_x": 0.5}
                                 id: submit_button
                                 text: 'Aled'
@@ -34,4 +34,11 @@
         MDNavigationDrawer:
             id: nav_drawer
 
-            NavigationDrawerContents:
+            NavigationDrawerContent:
+                orientation: "vertical"
+                padding: "8dp"
+                spacing: "8dp"
+
+                ScrollView:
+                    MDList:
+                        id: md_list
