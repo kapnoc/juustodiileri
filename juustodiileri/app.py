@@ -12,10 +12,6 @@ class NavigationDrawerContents(BoxLayout):
     pass
 
 
-class MainScreen(Screen):
-    pass
-
-
 class MainApp(MDApp):
     def build(self):
         manager = ScreenManager()
